@@ -37,6 +37,7 @@ a {
 
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .main-content {
@@ -44,6 +45,21 @@ a {
     max-width: calc(100% -48px);
     margin-left: auto;
     margin-right: auto;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.max-line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
 }
 
 /* ================ Header ================ */
@@ -321,4 +337,102 @@ a {
     color: #fff;
     background: var(--primary-color);
     cursor: pointer;
+}
+
+.popular .course-list {
+    display: flex;
+    margin-top: 55px;
+    gap: 30px;
+}
+.popular .course-item {
+    flex: 1;
+    border-radius: 12px;
+    border: 1px solid #e2dfda;
+    background: #fff;
+}
+
+.popular .course-item:hover {
+    border-color: transparent;
+    box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
+}
+.popular .thumb {
+    width: calc(100% + 2px);
+    height: 278px;
+    margin: -1px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.popular .info {
+    margin: 16px 22px 22px 22px;
+}
+
+.popular .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .head .title a {
+    padding-right: 6px;
+    color: #171100;
+
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.popular .rating {
+    display: flex;
+    align-items: center;
+}
+
+.popular .rating .value {
+    margin-left: 6px;
+    color: #fea31b;
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+.popular .info .desc {
+    margin-top: 6px;
+    color: #5f5b53;
+
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+    width: 326px;
+}
+
+.popular .foot {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .foot .price {
+    color: #171100;
+
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.popular .foot .book-btn {
+    border: none;
+}
+
+.popular .foot .book-btn:hover {
+    background: var(--primary-color);
 }
