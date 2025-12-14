@@ -528,8 +528,6 @@ a {
 .feature .image {
     display: flex;
     gap: 0 30px;
-    width: 50%;
-    height: 438px;
 }
 
 .feature .image img {
@@ -539,7 +537,7 @@ a {
     border-radius: 16px;
 }
 
-.feature .image img:first-child {
+.feature .image img.lower {
     margin-top: 34px;
 }
 
@@ -566,4 +564,21 @@ a {
     min-width: 137px;
     color: #fff;
     background: var(--primary-color);
+}
+
+.feature-2nd {
+    margin-top: 70px;
+}
+
+.feature-2nd .body {
+    flex-direction: row-reverse;
+}
+
+.feature-2nd .content {
+    width: 49%;
+}
+
+.feature-2nd .image img {
+    width: 470px;
+    height: 440px;
 }
